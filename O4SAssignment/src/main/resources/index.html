@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simulator</title>
+    <script
+      type="application/javascript"
+      src="https://cdn.pagamastarde.com/js/pmt-v2/sdk.js"
+    ></script>
+  </head>
+
+  <body>
+    <h1>Simulator Widget</h1>
+    <div class="simulatorPlaceholder"></div>
+    <script>
+      var simConfig = {
+        publicKey: 'tk_e9f603fd8b1646488da728b3',
+        selector: '.simulatorPlaceholder',
+        totalAmount: '600€',
+      };
+      pmtSDK.simulator.init(simConfig);
+    </script>
+  </body>
+</html>
